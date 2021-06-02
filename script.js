@@ -1,88 +1,65 @@
-// // //Different ways to write 
-// // //1)console
-// // //2)document
-// // console.log("Hello! Is there anybody in there!")
+// Arithmetic Operator
+var x = 10;
+var y = 3;
+var z1 = x+y;  //addition
+var z2 = x-y;  //subtraction
+var z3 = x*y;  //multiplication
+var z4 = x/y;  //division
+var z5 = x%y;  //modulus (remainder)
 
-// // document.write("<h1> Hello!? </h1>")
+//z variables get values from other values. Z vars do not change x or y vars.
+console.log(z1);
+console.log(z2);
+console.log(z3);
+console.log(z4);
+console.log(z5);
 
-// // //--------------------------------------------------
-// // //Alternative Console Writing
-// // console.log("Hi this is just another log.")
-// // console.warn("Warning! Warning! New Warning Unlocked!")
-// // console.error("Error Error. Does not compute")
+//--------------------------------------------
+//Assignment Operators
 
-// console.log(document.getElementById("header"))
+x += 5;    // x = x+5
+x -= 5;
+x *= 5;
+x /= 5;
+x %= 5;
 
-// console.log(document.getElementById("header").innerHTML)
-
-// //Setting Value to Document's ID Element 
-// document.getElementById("header").innerHTML = "This is NOW THE NEW HEADER!"
-
-// console.log(document.getElementById("header").innerHTML)
-
-//-----------------------------------------------------
-// //Writing Value to Document
-// document.write(document.getElementById("header").innerHTML)
-// document.write(" <==That was not a header")
-// document.write("<h3> But this is a header</h3>")
-
-// //-----------------------------------------------------
-// //Trying to Log Input Value inside text box
-// //This line of code does not work by itself
-// //Bc HTML and JS read from top to bottom
-// //When page is ran value is logged but it is blank
-// console.log(document.getElementById("myInput").value)
-
-//-----------------------------------------------------
-//Primitive Data Types
-
-//String
-//'' "isdfjOOJ"
-
-//Boolean
-//True False
-
-//Number
-//integer 
-//0 100 1000
-
-//float/double
-//0.1 1.3 29.0
-
-//Undefined
-  //-value has not be set
-  //-havnt defined anything
-//null
-  //-havnt stored anything yet
+y++;   // y = y+1
+y--;
 
 //---------------------------------------------------
-//Variables
+//String Concatenation /with Numbers
+var str = "hello";
 
-var x = 3;
+var str2 = "world";
 
-console.log(x)
+var str_concat_num = str+x;
+var str_concat_str = str+str2;
 
-//variable names should represent var characteristics
+//---------------------------------------------------
+//Order of Operations
 
-var name = "Cesar"
-
-console.log(name)
-
-//Rules for var names
-//start with letter
-//no spacing 
-//can use numbers, digits, underscore_
-//cant use some special characters
-//Use camelcase or underscore
-
-//--------------------------------------------------
-//Var Reference Locations
-var name2 = "Tim"
-var name3 = "Tech"
-
-name3 = name
-name3 = name2
+var result = 4 * 5 / 3 + 9 - 2;
+var result2 = 4 * (5 / (3 + 9 - 2));
+console.log("Result: "+result);
+console.log("Result2: "+result2);
 
 
-console.log("Name3: "+name3)
-console.log("Name: "+name)
+/* 
+JS 
+
+B brackets
+E exponents
+D division
+M multiplication
+A addition
+S subtraction
+
+------------------vs----------------------------
+MATH's PEMDAS
+*/
+
+//-------------------------------------------------
+//Can also use Assignment Operators on strings
+
+str+=str2
+str-=str2
