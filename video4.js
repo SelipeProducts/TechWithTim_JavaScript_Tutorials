@@ -26,27 +26,22 @@ x %= 5;
 y++;   // y = y+1
 y--;
 
-//---------------------------------------------------
+//----------------------------------------------------
 //String Concatenation /with Numbers
 var str = "hello";
-
 var str2 = "world";
-
 var str_concat_num = str+x;
 var str_concat_str = str+str2;
 
-//---------------------------------------------------
+//----------------------------------------------------
 //Order of Operations
-
 var result = 4 * 5 / 3 + 9 - 2;
 var result2 = 4 * (5 / (3 + 9 - 2));
 console.log("Result: "+result);
 console.log("Result2: "+result2);
 
-
 /* 
 JS 
-
 B brackets
 E exponents
 D division
@@ -60,7 +55,5 @@ MATH's PEMDAS
 
 //-------------------------------------------------
 //Can also use Assignment Operators on strings
-
-str+=str2;
-str-=str2;
-
+str+=str2
+str-=str2 
