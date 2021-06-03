@@ -1,52 +1,53 @@
-//Comparison Operators
+//Function initilization
+function add(){
+  console.log("add")
+}
 
-var x = 7;
-var y = 8;
+//Function call
+add();
 
-//var x = 8;
+//Can call func multiple times
+add();
+add();
+add();
 
-var b = x < y;
-var c = x >= y;
+//a nd b are parameters
+function addV2(a, b){
+  return a + b;
+}
 
-console.log(b);
-console.log(c);
+//both 5's are arguments
+var x = addV2(5,5);
+console.log(x);
 
-//--------------------------------------------------
-//Equivalence Operator ==
-var d = x == y;
-console.log(d);
-
-//=== is equal to value AND is equal to type
-
-var x2 = 11;
-var y2 = "11";
-
-var e = x2===y2; //should be false bc diff types
-var f = x2+y2;  //converts to string
-var g = x2 != y2; //false
-var h = x2 !== y2; //true bc type not same
-
-console.log(g);
-console.log(h);
+console.log(addV2(-100, 75));
 
 //----------------------------------------------------
-//Chaining Operators  w/ Boolean Operators
 
-//AND Statement &&
-//OR Statement ||
-//NOT Statement !
+function addV3(a, b){
+  console.log(a + b);
+}
 
+addV3(2, 2);
 
-var name = "Cesar";
-var name2 = "cesar";
-var x3 = 10;
-var y3 = 9;
+//-----------------------------------------------------
 
-console.log(name == name2 && y3>x3);
-console.log(name == name2 || y3>x3);
+function red(){
+  console.log("red");
+}
 
+function green(){
+  console.log("green");
+}
 
-console.log(!true);
-console.log(!(x<y));
+function red2(){
+  document.getElementById("btnTitle").innerHTML = "Red";
+}
 
-console.log(!(x < y) || !(name == name2 && 9 > 0));
+function green2(){
+  document.getElementById("btnTitle").innerHTML = "Green";
+}
+
+function style_color(){
+  document.getElementById("btnTitle").style.color = "green";
+}
