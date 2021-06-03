@@ -1,66 +1,52 @@
-// Arithmetic Operator
-var x = 10;
-var y = 3;
-var z1 = x+y;  //addition
-var z2 = x-y;  //subtraction
-var z3 = x*y;  //multiplication
-var z4 = x/y;  //division
-var z5 = x%y;  //modulus (remainder)
+//Comparison Operators
 
-//z variables get values from other values. Z vars do not change x or y vars.
-console.log(z1);
-console.log(z2);
-console.log(z3);
-console.log(z4);
-console.log(z5);
+var x = 7;
+var y = 8;
 
-//--------------------------------------------
-//Assignment Operators
+//var x = 8;
 
-x += 5;    // x = x+5
-x -= 5;
-x *= 5;
-x /= 5;
-x %= 5;
+var b = x < y;
+var c = x >= y;
 
-y++;   // y = y+1
-y--;
+console.log(b);
+console.log(c);
 
-//---------------------------------------------------
-//String Concatenation /with Numbers
-var str = "hello";
+//--------------------------------------------------
+//Equivalence Operator ==
+var d = x == y;
+console.log(d);
 
-var str2 = "world";
+//=== is equal to value AND is equal to type
 
-var str_concat_num = str+x;
-var str_concat_str = str+str2;
+var x2 = 11;
+var y2 = "11";
 
-//---------------------------------------------------
-//Order of Operations
+var e = x2===y2; //should be false bc diff types
+var f = x2+y2;  //converts to string
+var g = x2 != y2; //false
+var h = x2 !== y2; //true bc type not same
 
-var result = 4 * 5 / 3 + 9 - 2;
-var result2 = 4 * (5 / (3 + 9 - 2));
-console.log("Result: "+result);
-console.log("Result2: "+result2);
+console.log(g);
+console.log(h);
+
+//----------------------------------------------------
+//Chaining Operators  w/ Boolean Operators
+
+//AND Statement &&
+//OR Statement ||
+//NOT Statement !
 
 
-/* 
-JS 
+var name = "Cesar";
+var name2 = "cesar";
+var x3 = 10;
+var y3 = 9;
 
-B brackets
-E exponents
-D division
-M multiplication
-A addition
-S subtraction
+console.log(name == name2 && y3>x3);
+console.log(name == name2 || y3>x3);
 
-------------------vs----------------------------
-MATH's PEMDAS
-*/
 
-//-------------------------------------------------
-//Can also use Assignment Operators on strings
+console.log(!true);
+console.log(!(x<y));
 
-str+=str2;
-str-=str2;
-
+console.log(!(x < y) || !(name == name2 && 9 > 0));
