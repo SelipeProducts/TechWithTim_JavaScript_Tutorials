@@ -1,30 +1,36 @@
-//If and Else Statement
-var condition = true
-if (condition){
-  console.log("Condition in if statement is true")
-} else{
-  console.log("Condition has to be false if this runs")
-}
 
-//Else If Statements
+//switch statements
 function pressed(){
   var text = document.getElementById("inp").value;
-  if (text === "red"){
-    document.getElementById("header").style.color = "red"
-  } else if (text === "green"){
-    document.getElementById("header").style.color = "green"
-  }  else if (text === "blue"){
-    document.getElementById("header").style.color = "blue"
-  } else{
-    document.getElementById("header").style.color = "black"
+
+  switch(text){
+    case "red":
+      document.getElementById("header").style.color = "red";
+      break;
+    case "blue":
+      document.getElementById("header").style.color = "blue";
+      break;
+    case "green":
+      document.getElementById("header").style.color = "green";
+      break;
+    default:
+      document.getElementById("header").style.color = "black";
+      break;
   }
+  //If vs switch
+  // if (text === "red"){
+  //   document.getElementById("header").style.color = "red"
+  // } else if (text === "green"){
+  //   document.getElementById("header").style.color = "green"
+  // }  else if (text === "blue"){
+  //   document.getElementById("header").style.color = "blue"
+  // } else{
+  //   document.getElementById("header").style.color = "black"
+  // }
+  
+  //Use switch statements when testing exact values
+  //If statement when testing for multiple values
+  //switch == 3.3
+  //if  < 9000
 }
 
-
-
-//--------------------------------------------------
-//Multiple If Statements vs If w/multiple Else Ifs
-
-//Just having If statements. Each If statement will run. Sometimes if value found, other if statement checks are not needed. 
-
-//With Else if's can save time and resources by stopping if chain
