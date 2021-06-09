@@ -1,36 +1,24 @@
-
-//switch statements
 function pressed(){
   var text = document.getElementById("inp").value;
-
-  switch(text){
-    case "red":
-      document.getElementById("header").style.color = "red";
-      break;
-    case "blue":
-      document.getElementById("header").style.color = "blue";
-      break;
-    case "green":
-      document.getElementById("header").style.color = "green";
-      break;
-    default:
-      document.getElementById("header").style.color = "black";
-      break;
-  }
-  //If vs switch
-  // if (text === "red"){
-  //   document.getElementById("header").style.color = "red"
-  // } else if (text === "green"){
-  //   document.getElementById("header").style.color = "green"
-  // }  else if (text === "blue"){
-  //   document.getElementById("header").style.color = "blue"
-  // } else{
-  //   document.getElementById("header").style.color = "black"
-  // }
+  //UpperCase
+  output_up.innerHTML = text.toUpperCase()
+  //LowerCase
+  output_low.innerHTML = text.toLowerCase()
+  //StartsWith
+  output_startsw.innerHTML = text.startsWith("@")
+  //Trim before EndsWith
+  output_endsw.innerHTML = text.trim().endsWith("@")
+  //Just Trim It
+  output_trim.innerHTML = text.trim()
+  //Hello    //&nbsp; is html namecode for space
+  output_hello.innerHTML = "&nbsp;&nbsp;World&nbsp;&nbsp;"
+  //Hello Trim
+  output_trimHello.innerHTML = "  General K.  ".trim()
   
-  //Use switch statements when testing exact values
-  //If statement when testing for multiple values
-  //switch == 3.3
-  //if  < 9000
-}
+  //Text length
+  console.log("Text Length"+text.length)
 
+  output_concat.innerHTML = "You Typed: "+ text.trim() + 3
+
+
+}
