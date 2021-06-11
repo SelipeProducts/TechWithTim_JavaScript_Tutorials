@@ -27,11 +27,12 @@ console.log(cesar);
 cesar.push("Pushed In");
 console.log(cesar);
 
+//Removes from beginning of array
 cesar.shift();
 console.log(cesar);
 
-
-cesar.unshift("AndBanan", "Zebra");
+//Adds to beginning of array
+cesar.unshift("XKiwi", "AndBanan", "Zebra");
 console.log(cesar);
 
 //look how 10 is eventually sorted
@@ -43,6 +44,7 @@ cesar.push("A")
 cesar.push("Z")
 cesar.push("a")
 cesar.push("c")
+
 //sorts numbers then strings
 cesar.sort();
 console.log(cesar);

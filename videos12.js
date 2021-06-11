@@ -7,6 +7,7 @@ while(i < 10){
   i++;
 }
 
+
 //using break to exit loop
 while(true){
   console.log(i);
